@@ -303,7 +303,7 @@ gunicorn -w 4 -b 0.0.0.0:5000 app:app
 
 - 📧 邮箱: [2955611455@qq.com](mailto:your-email@example.com)
 - 🐙 GitHub: [https://github.com/Dadalia1917](https://github.com/yourusername)
-- 📱 微信: your-wechat-id
+- 📱 微信: zjx15251637949
 
 ---
 
