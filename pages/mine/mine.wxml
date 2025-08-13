@@ -1,0 +1,31 @@
+<!--头部栏-->
+<cu-custom bgColor="bg-purple" isBack="{{false}}">
+  <view slot="content">个人信息</view>
+</cu-custom>
+<!--页面-->
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <view class="userinfo">
+      <button class="cu-btn bg-xsblue margin-tb-lg lg" wx:if="{{!hasUserInfo && canIUse}}"bindtap="getUserProfile"> 授权获取用户信息</button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="user-img" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class="text-xl" style="text-align:center;">{{userInfo.nickName}}</view>
+      </block>
+    </view>
+  </view>
+  <view class="padding flex text-center text-grey bg-white shadow-warp" wx:if="{{hasUserInfo && canIUse}}">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-grey text-lg">目标检测</view>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/mine/about/about" hover-class="none">
+        <text class="cuIcon-creativefill text-orange"></text>
+        <text class="text-grey">关于</text>
+      </navigator>
+    </view>
+  </view>
+  <text class='reason_txt'>Version:1.0.0</text>
+  <view class="cu-tabbar-height"></view>
+</scroll-view>

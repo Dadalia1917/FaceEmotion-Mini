@@ -1,0 +1,35 @@
+<!-- 查研阅色导航栏 -->
+<cu-custom bgColor="bg-gradual-blue" isBack="{{false}}">
+    <view slot="content" class="text-white text-bold">查研阅色</view>
+</cu-custom>
+
+<!--内容-->
+<view class="page-body">
+    <view class="page-body-wrapper">
+        <image src="{{previewImagePath}}" style="width:100%;height:400rpx;" id="imageDom" mode='aspectFit'/>
+    </view>
+    <view class="padding flex flex-direction">
+        <button class="cu-btn bg-blue margin-tb-sm lg" bindtap="onSelectMedia">选取图片</button>
+    </view>
+
+    <!-- 功能按钮：选取视频和摄像头 -->
+    <view class="padding flex flex-direction">
+        <button class="cu-btn bg-orange margin-tb-sm lg" bindtap="onSelectVideo">选取视频</button>
+    </view>
+    <view class="padding flex flex-direction">
+        <button class="cu-btn bg-green margin-tb-sm lg" bindtap="onLaunchCamera">使用摄像头</button>
+    </view>
+</view>
+
+<!--查询详情-->
+<block wx:if="{{hasResult}}">
+    <view class="cu-bar bg-white solid-bottom margin-top">
+        <view class="action">
+            <text class="cuIcon-title text-blue"></text>
+            表情结果: {{emotionSummary}}
+        </view>
+    </view>
+</block>
+
+<!--给一个高度让内容显示完整-->
+<view class="cu-tabbar-height"></view>

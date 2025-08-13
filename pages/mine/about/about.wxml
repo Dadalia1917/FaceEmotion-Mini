@@ -1,0 +1,19 @@
+<!--头部栏-->
+<cu-custom bgColor="bg-green" isBack="{{true}}">
+    <view slot="backText">返回</view>
+    <view slot="content">关于</view>
+</cu-custom>
+<!--内容-->
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v1.0.0</view>
+        <view class="cu-tag line-white">2024/9/26</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>基于深度学习的人脸面部表情识别系统微信小程序版</view>
+      </view>
+    </view>   
+  </view>
+</view>
