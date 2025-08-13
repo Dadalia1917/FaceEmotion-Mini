@@ -82,7 +82,7 @@ flask-cors
 
 #### 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/FaceEmotion-Mini.git
+git clone https://github.com/Dadalia1917/FaceEmotion-Mini.git
 cd FaceEmotion-Mini
 ```
 
